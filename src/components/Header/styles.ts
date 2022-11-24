@@ -12,6 +12,8 @@ export const Container = styled.div<IScrollProps>`
     height:${props => props.show ? '0' : '60px'};
 
     position:fixed;
+    z-index: 99999;
+
     top: 0;
     left: 0;
     right: 0;
@@ -19,7 +21,7 @@ export const Container = styled.div<IScrollProps>`
     transition: .5s ease;
 
     &.scrolled{
-        background:gold;
+        background:#222;
         height: 40px;
     }
     
@@ -29,7 +31,6 @@ export const InnerHeader = styled.div<IScrollProps>`
     width: 80%;
 
     margin:0 auto;
-    background: red;
     height:${props => props.show ? '40px' : '60px'};
     transition: .5s ease;
 
@@ -70,7 +71,6 @@ export const Overlay = styled.div<IHeaderProps>`
 `
 export const MainLinks = styled.div`
     width: 30rem;
-    background:#ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,17 +117,12 @@ export const ToggleMenu = styled.button`
 `
 export const Menu = styled.div<IHeaderProps>`
     display:flex;
-    background:gold;
     transition: all 0.4s ease-out; 
-
-
 
     ul,li{
         display:flex;
-        background: orange;
     }
     a{
-        background: green;
         margin:0 10px;
         align-items: center;
         display: flex;
@@ -135,7 +130,8 @@ export const Menu = styled.div<IHeaderProps>`
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.9rem;
-        opacity: 0.75;        
+        opacity: 0.75; 
+        color: #fff;       
     }
     a:hover{
         opacity: 1;
@@ -170,7 +166,6 @@ export const Menu = styled.div<IHeaderProps>`
 `
 export const SocialIcons = styled.div`
     display:flex;
-    background:gray;
     padding: 10px;
     width: 8rem;
     justify-content: space-between;

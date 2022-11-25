@@ -45,6 +45,7 @@ export const WrapperTabs = styled.div`
     /* border-radius: 2rem; */
     margin-bottom: 1rem;
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
 
         :nth-child(1n){
             border-radius: 2rem 0 0 2rem;
@@ -56,9 +57,9 @@ export const WrapperTabs = styled.div`
 
         &.active-tabs  {
             background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-            border-bottom: 1px solid transparent;
-            transition: 0.4s ease-in-out;
             color: #fff;
+
+            
         }       
     } 
 

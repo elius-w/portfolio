@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import logoImg from '../../assets/react.svg';
-import {MdClose, MdMenu} from 'react-icons/md' 
+import {Link} from'react-scroll'
 
-
+import logoImg from '../../assets/logo-helioalves.svg';
+import {MdClose, MdMenu} from 'react-icons/md'
 import iconLinkedin  from '../../assets/icon-linkedin.svg' ;   
 import iconWhatsApp  from '../../assets/icon-whats.svg' ;   
 import iconGit  from '../../assets/icon-git.svg' ; 
@@ -35,7 +35,7 @@ export const Header = () => {
   },[])
 
   return (
-    <Container className={scrolled ? "scrolled" : ""} show={scrolled}>
+    <Container className={scrolled ? "scrolled" : ""} show={scrolled} id="topo">
      
         <InnerHeader show={scrolled}>
 
@@ -44,7 +44,7 @@ export const Header = () => {
           </ToggleMenu>   
 
           <Logo show={scrolled}>
-            <a href="" ><img src={logoImg} alt="Logo"/></a>
+            <Link to="banner" spy={true} smooth={true} offset={-100} duration={500} ><img src={logoImg} alt="Logo"/></Link>
           </Logo>     
 
           <MainLinks>
@@ -53,9 +53,10 @@ export const Header = () => {
             <Menu menuIsOpen={toggleMenuIsOpened}>
 
               <ul>
-                  <li><a href="#">Home</a></li>             
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Projects</a></li>
+                  <li><Link to="banner" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>             
+                  <li><Link to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link></li>
+                  <li><Link to="projects" spy={true} smooth={true} offset={80} duration={500}>Projects</Link></li>
+                  <li><Link to="contact" spy={true} smooth={true} offset={70} duration={500}>Connect</Link></li>
               </ul>          
 
             </Menu>

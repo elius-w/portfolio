@@ -1,32 +1,39 @@
 import styled from'styled-components'
 
 export const Container = styled.div`
-  
-   
+
     margin: 0.7rem;
-    /* width: 30%;
-    display: inline-flex; */
+    width: 30%;
+   
+    @media (max-width: 1024px){
+        margin: 0.5rem 0.5rem;
+        width: 45%;
+    }
+    @media (max-width: 600px){
+        margin: 1rem 0;
+        width: 100%;
+    }
     
-    :first-child{
+    /* :first-child{
         margin-left: 0;
     }
     :last-child{
         margin-right: 0;
-    }
+    } */
 
     .project-img-box{
         position: relative;
-        background: pink;
         overflow: hidden;
         width: 100%;
-        border-radius: 2rem;
+        border-radius: 1.6rem;
        
 
 
         ::before{
             content: "";
-            background: purple;
-            opacity: 0.85;
+            background: #222;
+            /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+            opacity: 0.75;
             position: absolute;
             width: 100%;
             height: 0;
@@ -54,14 +61,14 @@ export const Container = styled.div`
         
 
         h4{
-            font-size:1.5rem;
+            font-size:1.2rem;
             font-weight: 700;
             color:#fff;
         }
         span{
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 5px;
+            font-size: 0.8rem;
+            font-weight: normal;
+            margin-bottom: 0.8rem;
             color:#fff;
         }
         a{

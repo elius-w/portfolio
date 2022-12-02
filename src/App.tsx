@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-      <div className="bg-black"> 
+      <div className="bg-black scroll-smooth"> 
       <Header/>
-      {/* <Banner/> */}
+      <Banner/>
       <Skills/>
-      {/* <Projects/>
-      <SliderText/> */}
+      <Projects/>
+      <SliderText/>
       <Footer/>
       </div>
 

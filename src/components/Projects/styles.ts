@@ -1,11 +1,7 @@
 import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
-width: 80%;
-margin:0 auto;
-height: auto;
 display: grid;
-background-color:#444;
 padding:10rem 1rem;
 `
 const animate = keyframes`
@@ -24,11 +20,14 @@ const animate = keyframes`
 
 
 export const WrapperTabs = styled.div`
-   
+   position: relative;
 
     .block-tabs{
         width: 40%;       
-        margin: 0 auto;
+        margin: 1.5rem auto 0 auto;
+        @media(max-width: 600px){
+            width:100%;
+        }
     }
 
     button {
@@ -75,6 +74,8 @@ export const WrapperTabs = styled.div`
         display: flex;
         animation: ${animate} 0.5s;
         justify-content:center;
+        flex-wrap: wrap;
+
         @media(max-width: 600px){
             flex-wrap: wrap;
         }

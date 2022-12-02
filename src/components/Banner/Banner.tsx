@@ -3,10 +3,11 @@ import { Typewriter } from 'react-simple-typewriter'
 import {IoIosArrowDropright} from 'react-icons/io'
 import {Container, About, Photo} from './styles'
 
+import fotoAbout from '../../assets/helioalves.png';
 
 export const Banner = () => {
   return (
-    <Container>
+    <Container className="container" id="banner">
       <About>
         <h1 className="text-white">Hi! I'm</h1>
         <h2 className="text-white">Hélio {' '}
@@ -31,7 +32,7 @@ export const Banner = () => {
       </About>
 
       <Photo>
-        PHOTO
+        <img src={fotoAbout} alt=""/>
       </Photo>
 
     </Container>

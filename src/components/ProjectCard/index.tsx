@@ -3,15 +3,23 @@ import React from 'react'
 import {GoEye} from'react-icons/go'
 import {Container} from './styles'
 
-export const ProjectCard = () => {
+interface IProjectProps {
+  imgUrl: string,
+  title: string,
+  description: string,
+  link: string,
+}
+
+
+export const ProjectCard: React.FC<IProjectProps> = ({imgUrl, title, description, link}) => {
   return (
     <Container>
         <div className="project-img-box">
-            <img src="https://siteinspire.s3.us-east-1.amazonaws.com/screengrabs/images/000/015/715/small.jpg"/>
+            <img src={imgUrl} alt=""/>
             <div className="project-txt">
-                <h4>Lorem inpsum</h4>
-                <span>Description</span>
-                <a href="#">Ver OnLine<GoEye/></a>
+                <h4>{title}</h4>
+                <span>{description}</span>
+                <a href={link} target="_blank" >Ver OnLine<GoEye/></a>
             </div>
         </div>
     </Container>

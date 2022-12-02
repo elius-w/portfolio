@@ -1,10 +1,9 @@
 import styled from'styled-components'
 
 export const Container = styled.div`
-    width: 80%;
-    margin:0 auto;
-    height: 100vh;
-    padding:10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 `
 
@@ -29,7 +28,7 @@ export const IconSkills = styled.div`
             width: 2rem;
         }
          path{            
-            /* fill:gold;          */
+            /* fill:gold;    */             
         }
     }
     

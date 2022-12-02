@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.container{
+    width: 80%;
+    margin:0 auto;
+    padding:10rem 0;
+    position:relative;
+}

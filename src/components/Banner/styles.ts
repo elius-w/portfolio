@@ -1,32 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-width: 80%;
-margin:0 auto;
-height: 100vh;
 display: grid;
 grid-template-columns: 1fr 1fr;
 align-items: center;
-background-color:gray;
 padding:10rem 1rem;
 @media (max-width: 600px){
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
 }
 `
 export const About = styled.div`
+    padding-left:7rem;
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 4rem;
         font-weight: 900;
-        line-height: 60px;
+        line-height: 70px;
     }
     p{
         font-size: 0.9rem;
         margin: 2rem 0;
     }
     button{
+        background: #fff;
+        color:#222;
         :hover svg{
             margin-left: 1rem;
         }
@@ -37,6 +38,15 @@ export const About = styled.div`
         }      
         
     }
+    @media (max-width: 600px){
+        padding-left:0rem;
+        h2{
+            font-size: 2rem;
+            line-height: 40px;
+        }
+    }
+
+   
 ` 
 export const Photo = styled.div`` 
 

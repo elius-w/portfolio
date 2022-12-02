@@ -8,8 +8,7 @@ interface IHeaderProps{
 }  
 
 export const Container = styled.div<IScrollProps>`
-    background: #000;
-    height:${props => props.show ? '0' : '60px'};
+    height:${props => props.show ? '0' : '120px'};
 
     position:fixed;
     z-index: 99999;
@@ -21,8 +20,13 @@ export const Container = styled.div<IScrollProps>`
     transition: .5s ease;
 
     &.scrolled{
-        background:#222;
-        height: 40px;
+        height: 60px;
+    }
+    @media (max-width: 600px){
+        background: #000;
+    }
+    @media (min-width:1024px){
+        backdrop-filter:blur(5px);    
     }
     
 `
@@ -31,9 +35,8 @@ export const InnerHeader = styled.div<IScrollProps>`
     width: 80%;
 
     margin:0 auto;
-    height:${props => props.show ? '40px' : '60px'};
+    height:${props => props.show ? '60px' : '120px'};
     transition: .5s ease;
-
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +57,7 @@ export const Overlay = styled.div<IHeaderProps>`
   right: 0;
   bottom: 0; 
   width: 100%;
-  height: 100%;
+  height: 100vh;
   transition: 0.3s linear;
 
   background: rgba(0, 0, 0, 0.7);
@@ -70,15 +73,19 @@ export const Overlay = styled.div<IHeaderProps>`
 }  
 `
 export const MainLinks = styled.div`
-    width: 30rem;
+    width: 35rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 `
 export const Logo = styled.div<IScrollProps>`
 
+    a{
+        cursor: pointer;
+    }
+
     img{
-        width:${props => props.show ? '40px' : '60px'};
+        width:${props => props.show ? '80px' : '110px'};
         transition: .5s ease;
         display: flex;
     }
@@ -96,12 +103,11 @@ export const ToggleMenu = styled.button`
     border-radius: 5px;
     border: none;
     font-size: 22px;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     transition: opacity 0.3s;
-    background: #ccc;
     display: none;
-    .closeColor{color:#444}
+    .closeColor{color:#ccc}
 
     &:hover {
         opacity: 0.7;
@@ -126,12 +132,18 @@ export const Menu = styled.div<IHeaderProps>`
         margin:0 10px;
         align-items: center;
         display: flex;
-        padding:5px 0px;
+        padding:2px 5px;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 0.9rem;
         opacity: 0.75; 
-        color: #fff;       
+        color: #fff;  
+        cursor: pointer; 
+        transition: all .3s ease-out;
+        &.active{
+            border-radius: 5px;
+            opacity: 1; 
+        }    
     }
     a:hover{
         opacity: 1;
@@ -148,6 +160,7 @@ export const Menu = styled.div<IHeaderProps>`
         display: flex;
         justify-content: center;
         transition: all 0.4s ease-out; 
+        background: #1e1e1e;
 
 
         ul, li{
@@ -177,14 +190,13 @@ export const SocialIcons = styled.div`
     a{
         width: 30px;
         height: 30px;
-        background: rgba(217, 217, 217, 0.1);
         display: inline-flex;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
         line-height: 1;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-    }
+    }  
+    
 
     a img {
 	width: 45%;

@@ -1,19 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 80%;
-    margin:0 auto;
-    height: 100vh;
-    background: gray;
-    padding:10rem 0;
-
-    .icon-git{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     .logo{
+        img{
+            width:10rem;
+        }
+     }
+     .icon-git{
         svg{
             position: relative;
             z-index:999;
             transition: all 0.3s ease-in-out;
+            color:#fff;
             &:hover{
-                color: #fff;
+                color: gray;
             }                
         } 
     }
@@ -35,7 +38,7 @@ export const InforContacts = styled.div`
     align-items: center;
     width:33%;
     transition: all 0.3s ease-in-out;
-
+    color: #fff;
     @media (max-width: 600px){
         width:100%;
         margin:0.5rem 0;

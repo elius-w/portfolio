@@ -4,8 +4,8 @@ export const Container = styled.div`
     width: 100%;
     margin:0 auto;
     height: auto;
-    background: gold;
-    padding:2rem 0;
+    background: #27015a;
+    padding:0rem 0;
     overflow: hidden;
 
 
@@ -33,6 +33,7 @@ export const SliderWrapper = styled.div`
         flex-wrap: nowrap;
         font-size: 1rem;
         margin: 0 1rem;
+        color: #fff;
         img{
             width: 2rem;
         } 

@@ -4,6 +4,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .text-small{
+        font-size: 3rem;
+        line-height:50px;
+     }
      .logo{
         img{
             width:10rem;
@@ -19,6 +23,14 @@ export const Container = styled.div`
                 color: gray;
             }                
         } 
+    }
+
+    @media (min-width:1024px){
+        .text-small{
+            font-size: 5rem;
+            line-height:68px;
+        }
+       
     }
     
 

@@ -13,8 +13,8 @@ export const Footer = () => {
   return (
     <Container className="container" id="contact">
 
-       <div className="flex justify-center pt-5 pb-10 logo"> <img src={logoImg} alt="Logo"/></div>
 
+        <h1 className="text-white text-center font-bold pb-10 text-small">VAMOS <br/>CONVERSAR?</h1>
         <h2 className="text-white text-center text-3xl font-bold">Get in touch.</h2>
         <p className="text-gray-200 text-center text-xs">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -38,7 +38,10 @@ export const Footer = () => {
                 helioalves.dev@gmail.com</h6></a>
             </InforContacts>
         </WrapperFooter>
-        <div className="justify-center flex pt-20 icon-git"><a href="#"><AiFillGithub size={40}/></a></div>
+
+        <div className="flex justify-center pt-10 pb-10 logo"> <img src={logoImg} alt="Logo"/></div>
+
+        <div className="justify-center flex  icon-git"><a href="https://github.com/elius-w" target="_blank"><AiFillGithub size={40}/></a></div>
 
         <ScrollToTop/>
 

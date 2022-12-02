@@ -23,12 +23,12 @@ export const IconSkills = styled.div`
             margin-top: -1rem;
         }
     }
-    .wordpress{
+    .styledIcon{
         svg{
             width: 2rem;
         }
          path{            
-            /* fill:gold;    */             
+            /* fill:gold;                 */
         }
     }
     

@@ -55,17 +55,17 @@ export const Header = () => {
               <ul>
                   <li><Link to="banner" spy={true} smooth={true} offset={-100} duration={500}>Home</Link></li>             
                   <li><Link to="skills" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link></li>
-                  <li><Link to="projects" spy={true} smooth={true} offset={80} duration={500}>Projects</Link></li>
-                  <li><Link to="contact" spy={true} smooth={true} offset={70} duration={500}>Connect</Link></li>
+                  <li><Link to="projects" spy={true} smooth={true} offset={-40} duration={500}>Projects</Link></li>
+                  <li><Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>Connect</Link></li>
               </ul>          
 
             </Menu>
             </Overlay>
 
             <SocialIcons>
-              <a href="" ><img src={iconLinkedin} alt="Logo"/></a>
-              <a href=""><img src={iconWhatsApp} alt="Logo"/></a>
-              <a href=""><img src={iconGit} alt="Logo"/></a>
+              <a href="www.linkedin.com/in/helioalves1" target="_blank"><img src={iconLinkedin} alt="Logo"/></a>
+              <a href="https://bit.ly/contatohelioalves" target="_blank"><img src={iconWhatsApp} alt="Logo"/></a>
+              <a href="https://github.com/elius-w" target="_blank"><img src={iconGit} alt="Logo"/></a>
           
             </SocialIcons>
           </MainLinks>

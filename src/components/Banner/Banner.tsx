@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import {IoIosArrowDropright} from 'react-icons/io'
 import {Container, About, Photo} from './styles'
 
-import fotoAbout from '../../assets/helioalves.png';
+import fotoAbout from '../../assets/foto.gif';
 
 export const Banner = () => {
   return (

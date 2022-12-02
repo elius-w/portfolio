@@ -85,7 +85,7 @@ export const Logo = styled.div<IScrollProps>`
     }
 
     img{
-        width:${props => props.show ? '80px' : '110px'};
+        width:${(props) => (props.show ? '80px' : '110px')};
         transition: .5s ease;
         display: flex;
     }

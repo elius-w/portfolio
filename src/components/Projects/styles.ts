@@ -2,7 +2,7 @@ import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
 display: grid;
-padding:10rem 1rem;
+padding:5rem 1rem;
 `
 const animate = keyframes`
     0% {
@@ -33,6 +33,8 @@ export const WrapperTabs = styled.div`
     button {
     padding: 15px;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
     width: 50%;
     background: #222;
     color: #fff;

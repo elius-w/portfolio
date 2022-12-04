@@ -1,13 +1,23 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import {IoIosArrowDropright} from 'react-icons/io'
-import {Container, About, Photo} from './styles'
+import {Container, About, Photo, SliderText} from './styles'
 
 import fotoAbout from '../../assets/foto.gif';
 
 export const Banner = () => {
+
   return (
-    <Container className="container" id="banner">
+    <Container id="banner">
+      <SliderText>
+      <ul>
+                <li>Desenvolvedor</li>
+                <li>|</li>
+                <li>Front-end developer</li>
+                <li>|</li>
+     
+            </ul>
+      </SliderText>
       <About>
         <h1 className="text-white">Hi! I'm</h1>
         <h2 className="text-white">Hélio {' '}
@@ -24,17 +34,25 @@ export const Banner = () => {
 
 
         </h2>
-        <p className="text-white">
+        <p className="dark:text-white">
           Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão.
           Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500
         </p>
-        <button className="px-8 py-2 rounded-full flex items-center text-white bg-gray-600">Let’s Connect <IoIosArrowDropright size={23}/></button>
+        <button className="px-8 py-2 rounded-full flex items-center  dark:bg-white dark:text-black ">Let’s Connect <IoIosArrowDropright size={23}/></button>
       </About>
 
-      <Photo>
+      <Photo>        
         <img src={fotoAbout} alt=""/>
       </Photo>
 
     </Container>
   )
 }
+function componentDidMount() {
+  throw new Error('Function not implemented.');
+}
+
+function componentWillUnmount() {
+  throw new Error('Function not implemented.');
+}
+

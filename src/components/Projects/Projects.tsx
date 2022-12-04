@@ -89,8 +89,8 @@ export const Projects = () => {
 
   return (
     <Container className="container" id="projects">
-       <h2 className="text-white text-center text-3xl">Projects</h2>
-        <p className="text-gray-200 text-center text-xs">
+       <h2 className="text-black dark:text-white text-center text-3xl font-bold">Projects</h2>
+        <p className="text-gray-black dark:text-white text-center text-xs">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
         </p>

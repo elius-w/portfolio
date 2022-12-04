@@ -4,6 +4,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding:8rem 0rem;
+    @media (max-width:600px){
+        padding:3rem 0rem;
+    }
     
 `
 

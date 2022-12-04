@@ -5,9 +5,11 @@ interface IScrollProps{
   }
 interface IHeaderProps{
     menuIsOpen: boolean;
-}  
+} 
+
 
 export const Container = styled.div<IScrollProps>`
+
     height:${props => props.show ? '0' : '120px'};
 
     position:fixed;
@@ -61,7 +63,7 @@ export const Overlay = styled.div<IHeaderProps>`
   transition: 0.3s linear;
 
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter:${(props) => (props.menuIsOpen ? 'blur(3px)' : 'blur(0px)')} ;    
+  backdrop-filter:${(props) => (props.menuIsOpen ? 'blur(4px)' : 'blur(0px)')} ;    
 
   visibility: ${(props) => (props.menuIsOpen ? 'visible' : 'hidden')};
   ${({menuIsOpen}) =>`
@@ -133,20 +135,23 @@ export const Menu = styled.div<IHeaderProps>`
         align-items: center;
         display: flex;
         padding:2px 5px;
-        text-transform: uppercase;
         font-weight: bold;
-        font-size: 0.9rem;
-        opacity: 0.75; 
+        font-size: 1rem;
         color: #fff;  
         cursor: pointer; 
-        transition: all .3s ease-out;
+        transition: all .2s ease-in-out;
         &.active{
             border-radius: 5px;
             opacity: 1; 
+            color: #bc79ff;
         }    
     }
     a:hover{
         opacity: 1;
+    }
+
+    .InfoMob{
+        display: none;
     }
 
     @media (max-width: 600px) {   
@@ -156,11 +161,11 @@ export const Menu = styled.div<IHeaderProps>`
         z-index:3;
         padding: 7rem 2rem;
         height: 100vh;
-        width: 12rem;
+        width: 15rem;
         display: flex;
-        justify-content: center;
         transition: all 0.4s ease-out; 
-        background: #1e1e1e;
+        background: #252525; 
+        flex-direction: column;
 
 
         ul, li{
@@ -168,11 +173,39 @@ export const Menu = styled.div<IHeaderProps>`
         }
         a{
         margin:5px;
+        font-size: 1.2rem;
         }
+
+        .InfoMob{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            padding-left: 0.7rem;
+            justify-content:space-between;
+            margin-top:2rem;
+            color: #fff;
+            span {
+                margin-bottom:1rem;
+                display: flex;
+                flex-wrap: wrap;
+                line-height: 24px;
+                b{
+                    font-weight: 900;
+                    font-size: 1rem;
+                }
+
+            }
+            a{
+                display: flex;
+
+            }
+        }
+      
  
         ${({ menuIsOpen }) => `
-      transform: ${menuIsOpen ? 'translateX(0)' : 'translateX(120%)'};
-    `}
+            transform: ${menuIsOpen ? 'translateX(0)' : 'translateX(120%)'};
+        `
+    }
        
   } 
 

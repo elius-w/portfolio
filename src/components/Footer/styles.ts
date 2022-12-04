@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding:10rem 0rem;
     .text-small{
         font-size: 3rem;
         line-height:50px;
@@ -18,11 +19,14 @@ export const Container = styled.div`
             position: relative;
             z-index:999;
             transition: all 0.3s ease-in-out;
-            color:#fff;
             &:hover{
                 color: gray;
             }                
         } 
+    }
+
+    @media (max-width:600px){
+        padding:5rem 0rem;
     }
 
     @media (min-width:1024px){

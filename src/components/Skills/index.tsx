@@ -5,8 +5,8 @@ import {Container, IconSkills, WrapperSkills} from './styles'
 export const Skills = () => {
   return (
     <Container className="container" id="skills">
-        <h2 className="text-white text-center text-3xl font-bold">Skills</h2>
-        <p className="text-gray-200 text-center text-xs pb-10">
+        <h2 className=" text-center text-3xl font-bold text-black dark:text-white">Skills</h2>
+        <p className="text-gray-black dark:text-white text-center text-xs pb-10">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> 
         </p>
 

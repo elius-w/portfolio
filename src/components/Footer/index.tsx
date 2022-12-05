@@ -1,5 +1,9 @@
 import React from 'react'
+import DarkMode from '../DarkMode';
+import { useTheme } from '../Hooks/useTheme';
+
 import logoImg from '../../assets/logo-helioalves.svg';
+import logoImgBlack from '../../assets/logo-helioalves-black.svg';
 
 import {RiLinkedinFill} from 'react-icons/ri'
 import {AiFillGithub} from 'react-icons/ai'
@@ -8,9 +12,12 @@ import {HiOutlineMail} from 'react-icons/hi'
 
 import {Container,WrapperFooter, InforContacts} from './styles'
 import {ScrollToTop} from '../ScrollToTop'
-import DarkMode from '../DarkMode';
+
 
 export const Footer = () => {
+
+  const [theme, setTheme] = useTheme()
+
   return (
     <Container className="container" id="contact">
 
@@ -49,7 +56,13 @@ export const Footer = () => {
             </InforContacts>
         </WrapperFooter>
 
-        <div className="flex justify-center pt-10 pb-10 logo"> <img src={logoImg} alt="Logo"/></div>
+        <div className="flex justify-center pt-10 pb-10 logo">
+          {theme === "light" ? (
+              <img src={logoImgBlack} alt="Logo"/>
+            ):(
+              <img src={logoImg} alt="Logo"/>
+          )}
+        </div>
 
         <div className="justify-center flex  icon-git text-black dark:text-white">
           <a href="https://github.com/elius-w" target="_blank">

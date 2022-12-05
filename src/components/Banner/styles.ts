@@ -78,7 +78,7 @@ export const About = styled.div`
         
     }
     @media (max-width: 600px){
-        padding-left:0rem;
+        padding:0 2rem;
         h2{
             font-size: 3rem;
             line-height: 50px;

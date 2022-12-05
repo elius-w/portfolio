@@ -16,6 +16,19 @@ module.exports = {
       '4xl':80,
 
     },
+    colors:{
+
+      transparent: 'transparent',
+
+      'black': '#000000',
+      'white': '#ffffff',
+
+      gray:{        
+        700: '#202024',
+        500: '#252525',
+        400: '#7c7c8a',
+      },
+    },
     extend: {
       fontFamily:{
         sans:'Montserrat, sans-serif' 

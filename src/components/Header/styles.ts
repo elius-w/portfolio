@@ -7,8 +7,7 @@ interface IHeaderProps{
     menuIsOpen: boolean;
 } 
 
-
-export const Container = styled.div<IScrollProps>`
+export const Container = styled.div<IScrollProps>`    
 
     height:${props => props.show ? '0' : '120px'};
 
@@ -19,16 +18,15 @@ export const Container = styled.div<IScrollProps>`
     left: 0;
     right: 0;
     bottom: 0;
-    transition: .5s ease;
+    transition: .5s ease;   
 
     &.scrolled{
         height: 60px;
     }
-    @media (max-width: 600px){
-        background: #000;
-    }
+
     @media (min-width:1024px){
-        backdrop-filter:blur(5px);    
+        backdrop-filter:blur(5px);          
+        &.bg-hide{background:transparent;}  
     }
     
 `
@@ -114,7 +112,7 @@ export const ToggleMenu = styled.button`
     &:hover {
         opacity: 0.7;
     }
-    margin-right: 1rem;
+    margin-right: 2rem;
     @media (max-width: 600px) {
         display: flex;
         position: absolute;
@@ -124,9 +122,10 @@ export const ToggleMenu = styled.button`
 
 `
 export const Menu = styled.div<IHeaderProps>`
+    
     display:flex;
     transition: all 0.4s ease-out; 
-
+    
     ul,li{
         display:flex;
     }
@@ -137,7 +136,6 @@ export const Menu = styled.div<IHeaderProps>`
         padding:2px 5px;
         font-weight: bold;
         font-size: 1rem;
-        color: #fff;  
         cursor: pointer; 
         transition: all .2s ease-in-out;
         &.active{
@@ -154,6 +152,12 @@ export const Menu = styled.div<IHeaderProps>`
         display: none;
     }
 
+    @media (min-width: 1024px){
+        &.teste{
+            background:none;
+        }
+    }
+
     @media (max-width: 600px) {   
         position: fixed;
         top:0;
@@ -164,7 +168,7 @@ export const Menu = styled.div<IHeaderProps>`
         width: 15rem;
         display: flex;
         transition: all 0.4s ease-out; 
-        background: #252525; 
+        /* background: #252525;  */
         flex-direction: column;
 
 
@@ -183,7 +187,6 @@ export const Menu = styled.div<IHeaderProps>`
             padding-left: 0.7rem;
             justify-content:space-between;
             margin-top:2rem;
-            color: #fff;
             span {
                 margin-bottom:1rem;
                 display: flex;

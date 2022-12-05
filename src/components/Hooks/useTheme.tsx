@@ -1,6 +1,6 @@
 import React, {useContext, createContext, useState, useEffect} from 'react'
 
-const ThemeContext = createContext({})
+const ThemeContext = createContext<any[]>([])
 
 
 export default function ThemeContextProvider({ children}){
@@ -23,7 +23,7 @@ export default function ThemeContextProvider({ children}){
     },[theme])
 
     return (
-        <ThemeContext.Provider value={{theme, setTheme}}>
+        <ThemeContext.Provider value={[theme, setTheme]}>
             {children}
         </ThemeContext.Provider>
     )

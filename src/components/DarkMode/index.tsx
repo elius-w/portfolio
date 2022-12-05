@@ -7,7 +7,7 @@ import { useTheme } from '../Hooks/useTheme'
 
 const DarkMode = () => {
 
-    const {theme, setTheme} = useTheme()
+    const [theme, setTheme] = useTheme()
 
   return (
     <Container>       

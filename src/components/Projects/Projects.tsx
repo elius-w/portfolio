@@ -11,7 +11,7 @@ import vitoriaregia from '../../assets/vitoriaregia.png'
 
 import minhacarteira from '../../assets/minhacarteira.png'
 import promodoro from '../../assets/promodoro.png'
-import clonetesla from '../../assets/clonetesla.png'
+import blog from '../../assets/blog.png'
 
 
 export const Projects = () => {
@@ -60,21 +60,21 @@ export const Projects = () => {
   const projectsReact = [
     {
       imgUrl: minhacarteira,
-      title: "Minha Carteira",
+      title: "Carteira Financeira",
       description: "Dashboard",
-      link:"#"
+      link:"https://dashboard-react-wallet.vercel.app/"
     },
     {
       imgUrl: promodoro,
       title: "Promodoro",
       description: "Temporizador",
-      link:"#"
+      link:"https://moveitcounter.vercel.app/"
     },
     {
-      imgUrl: clonetesla,
-      title: "Clone Tesla",
-      description: "Landing Page",
-      link:"#"
+      imgUrl: blog,
+      title: "Blog",
+      description: "Site de noticias",
+      link:"https://blogtechnews.vercel.app"
     },
 
   ]

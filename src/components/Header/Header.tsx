@@ -6,7 +6,10 @@ import {clsx} from 'clsx';
 import logoImg from '../../assets/logo-helioalves.svg';
 import logoImgBlack from '../../assets/logo-helioalves-black.svg';
 import {MdClose, MdMenu} from 'react-icons/md'
-import iconLinkedin  from '../../assets/icon-linkedin.svg' ;   
+// import iconLinkedin  from '../../assets/icon-linkedin.svg' ;   
+import {FaLinkedinIn}  from 'react-icons/fa' ;   
+import {BsWhatsapp}  from 'react-icons/bs' ;   
+import {BsGithub}  from 'react-icons/bs' ;   
 import iconWhatsApp  from '../../assets/icon-whats.svg' ;   
 import iconGit  from '../../assets/icon-git.svg' ; 
  
@@ -77,19 +80,18 @@ export const Header = () => {
                  <p>helioalves.dev@gmail.com</p> 
                  <b>(73)  9 9914-0522</b>
                 </span>  
-                <a href="www.linkedin.com/in/helioalves1" target="_blank"  ><img src={iconLinkedin} alt="Logo"/></a>
-                <a href="https://bit.ly/contatohelioalves" target="_blank"><img src={iconWhatsApp} alt="Logo"/></a>
-                <a href="https://github.com/elius-w" target="_blank"><img src={iconGit} alt="Logo"/></a> 
+                <a href="www.linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
+                <a href="https://bit.ly/contatohelioalves" target="_blank"><BsWhatsapp className="text-gray-500 dark:text-white"/></a>
+                <a href="https://github.com/elius-w" target="_blank"><BsGithub className="text-gray-500 dark:text-white"/></a>
               </div>   
 
             </Menu>
             </Overlay>
 
             <SocialIcons>
-              <a href="www.linkedin.com/in/helioalves1" target="_blank"><img src={iconLinkedin} alt="Logo"/></a>
-              <a href="https://bit.ly/contatohelioalves" target="_blank"><img src={iconWhatsApp} alt="Logo"/></a>
-              <a href="https://github.com/elius-w" target="_blank"><img src={iconGit} alt="Logo"/></a>
-          
+              <a href="www.linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
+              <a href="https://bit.ly/contatohelioalves" target="_blank"><BsWhatsapp className="text-gray-500 dark:text-white"/></a>
+              <a href="https://github.com/elius-w" target="_blank"><BsGithub className="text-gray-500 dark:text-white"/></a>          
             </SocialIcons>
           </MainLinks>
         

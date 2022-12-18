@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-import {IoIosArrowDropright} from 'react-icons/io'
+import {BiCloudDownload} from 'react-icons/bi'
 import {Container, About, Photo, SliderText} from './styles'
 
 import fotoAbout from '../../assets/foto.gif';
@@ -10,19 +10,19 @@ export const Banner = () => {
   return (
     <Container id="banner">
       <SliderText>
-      <ul>
-                <li>Desenvolvedor</li>
-                <li>|</li>
-                <li>Front-end developer</li>
-                <li>|</li>
-     
-            </ul>
+        <ul>
+            <li>Front-End Developer</li>
+            <li>|</li>
+            <li>UI/UX Design</li>
+            <li>|</li>
+  
+        </ul>
       </SliderText>
       <About>
-        <h1 className="text-white">Hi! I'm</h1>
+        <h1 className="text-white">Hi there, I'm</h1>
         <h2 className="text-white">Hélio {' '}
         <Typewriter
-            words={['Web Designer', 'UI/UX Designer', 'Web Developer']}
+            words={['Front-End Developer', 'UI/UX Design', 'Web Developer']}
             loop={5}
             cursor
             cursorStyle='_'
@@ -35,10 +35,11 @@ export const Banner = () => {
 
         </h2>
         <p className="dark:text-white">
-          Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão.
-          Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500
+          Desenvolvedor web, mais de 8 anos de experiência progredindo todos os dias, atuando em tecnologias web e design UI/UX, sempre procurando fazer interfaces com experiências fantásticas.<br/><br/>
+
+          Atualmente, estou em busca de novos desafios e experiências, que me permitam contribuir diretamente para o desenvolvimento de soluções inovadoras a partir da criação de código eficiente, escalável e reutilizável.
         </p>
-        <button className="px-8 py-2 rounded-full flex items-center  dark:bg-white dark:text-black ">Let’s Connect <IoIosArrowDropright size={23}/></button>
+        <button className="px-8 py-3 rounded-full flex items-center  dark:bg-white dark:text-black font-bold">Baixar CV <BiCloudDownload size={23}/></button>
       </About>
 
       <Photo>        

@@ -40,19 +40,19 @@ export const Projects = () => {
       imgUrl: imoveisemporto,
       title: "Imóveis Emporto",
       description: "Portal Imobiliário",
-      link:"https://lojamaniaacessorios.com.br"
+      link:"https://imoveisemporto.com.br"
     },
     {
       imgUrl: orquideashotel,
       title: "Orquideas Praia Hotel",
       description: "Site Institucional",
-      link:"https://lojamaniaacessorios.com.br"
+      link:"https://orquideaspraiahotel.com.br"
     },
     {
       imgUrl: vitoriaregia,
       title: "Vitória Régia Hotel",
-      description: "Site Institucional",
-      link:"https://lojamaniaacessorios.com.br"
+      description: "Site Institucional / Em construção",
+      link:"#"
     },
 
   ]
@@ -91,8 +91,7 @@ export const Projects = () => {
     <Container className="container" id="projects">
        <h2 className="text-black dark:text-white text-center text-3xl font-bold">Projects</h2>
         <p className="text-gray-black dark:text-white text-center text-xs">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/> 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+          Aqui está uma pequena seleção com alguns sites e aplicações que desenvolvi recentemente<br/> 
         </p>
                 
         <WrapperTabs>

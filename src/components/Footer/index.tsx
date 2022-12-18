@@ -25,7 +25,7 @@ export const Footer = () => {
         <h1 className="text-gray-black dark:text-white text-center font-bold pb-10 text-small">VAMOS <br/>CONVERSAR?</h1>
         <h2 className="text-gray-black dark:text-white text-center text-3xl font-bold">Get in touch.</h2>
         <p className="text-gray-black dark:text-white text-center text-xs">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Entre em contato através de uma das minhas redes sociais, e-mail ou WhatsApp.
         </p>
         <WrapperFooter className="pt-10">
             <InforContacts>

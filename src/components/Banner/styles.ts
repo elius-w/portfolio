@@ -42,6 +42,7 @@ ul,li{
         font-size: 11rem;
         margin: 0 1rem;
         color: #404040;
+        font-weight: 700;
         opacity: 0.6;
         img{
             width: 2rem;
@@ -51,12 +52,12 @@ ul,li{
 export const About = styled.div`
     padding-left:30%;
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     h2{
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 900;
-        line-height: 70px;
+        line-height: 60px;
         background: #27015a;
         display: inline;
     }
@@ -80,8 +81,8 @@ export const About = styled.div`
     @media (max-width: 600px){
         padding:0 2rem;
         h2{
-            font-size: 3rem;
-            line-height: 50px;
+            font-size: 2rem;
+            line-height: 40px;
         }
     }
 

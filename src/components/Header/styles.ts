@@ -234,8 +234,7 @@ export const SocialIcons = styled.div`
     }  
     
 
-    a img {
-	width: 45%;
+    a svg {
 	z-index: 1;
 	transition: 0.3s ease-in-out;
     }
@@ -255,7 +254,7 @@ export const SocialIcons = styled.div`
     transform: scale(1);
     }
 
-    a:hover img {
+    a:hover svg {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 
    

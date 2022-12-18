@@ -23,7 +23,7 @@ const sliderText = keyframes`
 export const SliderWrapper = styled.div`
     width: 100%;
     animation: ${sliderText} 20s linear infinite alternate;
-    padding:1rem 0;
+    padding:1.3rem 0;
 
 
     ul,li{
@@ -35,7 +35,7 @@ export const SliderWrapper = styled.div`
         margin: 0 1rem;
         color: #fff;
         img{
-            width: 2rem;
+            width: 0.4rem;
         } 
     }
 

@@ -4,6 +4,7 @@ import {BiCloudDownload} from 'react-icons/bi'
 import {Container, About, Photo, SliderText} from './styles'
 
 import fotoAbout from '../../assets/foto.gif';
+import curriculo from '../../assets/Curriculo-Helio-Alves.pdf';
 
 export const Banner = () => {
 
@@ -35,11 +36,12 @@ export const Banner = () => {
 
         </h2>
         <p className="dark:text-white">
-          Desenvolvedor web, mais de 8 anos de experiência progredindo todos os dias, atuando em tecnologias web e design UI/UX, sempre procurando fazer interfaces com experiências fantásticas.<br/><br/>
+          Desenvolvedor web, mais de 9 anos de experiência progredindo todos os dias, atuando em tecnologias web,  design e UI/UX.<br/><br/>
 
-          Atualmente, estou em busca de novos desafios e experiências, que me permitam contribuir diretamente para o desenvolvimento de soluções inovadoras a partir da criação de código eficiente, escalável e reutilizável.
+          Atualmente, estou em busca de novos desafios e experiências, que me permitam contribuir diretamente para o desenvolvimento de soluções inovadoras 
+          a partir da criação de código eficiente, escalável e reutilizável.
         </p>
-        <button className="px-8 py-3 rounded-full flex items-center  dark:bg-white dark:text-black font-bold">Baixar CV <BiCloudDownload size={23}/></button>
+        <button className='rounded-full'><a href={curriculo} target="_blank" className="px-8 py-3 rounded-full flex items-center  dark:bg-white dark:text-black font-bold">Baixar CV <BiCloudDownload size={23}/></a></button>
       </About>
 
       <Photo>        

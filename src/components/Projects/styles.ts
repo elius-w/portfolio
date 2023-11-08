@@ -53,6 +53,10 @@ export const WrapperTabs = styled.div`
         }
 
         :nth-child(2n){
+            border-radius: 0  ;
+        }
+
+        :nth-child(3n){
             border-radius: 0  2rem 2rem 0 ;
         }
 

@@ -80,7 +80,7 @@ export const Header = () => {
                  <p>helioalves.dev@gmail.com</p> 
                  <b>(73)  9 9914-0522</b>
                 </span>  
-                <a href="www.linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
+                <a href="https://linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
                 <a href="https://bit.ly/contatohelioalves" target="_blank"><BsWhatsapp className="text-gray-500 dark:text-white"/></a>
                 <a href="https://github.com/elius-w" target="_blank"><BsGithub className="text-gray-500 dark:text-white"/></a>
               </div>   
@@ -89,7 +89,7 @@ export const Header = () => {
             </Overlay>
 
             <SocialIcons>
-              <a href="www.linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
+              <a href="https://linkedin.com/in/helioalves1" target="_blank"><FaLinkedinIn className="text-gray-500 dark:text-white"/></a>
               <a href="https://bit.ly/contatohelioalves" target="_blank"><BsWhatsapp className="text-gray-500 dark:text-white"/></a>
               <a href="https://github.com/elius-w" target="_blank"><BsGithub className="text-gray-500 dark:text-white"/></a>          
             </SocialIcons>

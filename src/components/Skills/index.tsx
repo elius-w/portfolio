@@ -5,10 +5,7 @@ import {Container, IconSkills, WrapperSkills} from './styles'
 export const Skills = () => {
   return (
     <Container className="container" id="skills">
-        <h2 className=" text-center text-3xl font-bold text-black dark:text-white">Skills</h2>
-        <p className="text-gray-black dark:text-white text-center text-xs pb-10">
-          Linguagens e ferramentas de programação<br/> 
-        </p>
+        <h2 className=" text-center text-3xl font-bold text-black dark:text-white">Skills</h2>       
 
         <WrapperSkills>
             <IconSkills title="Wordpress">

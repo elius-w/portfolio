@@ -30,7 +30,7 @@ export const Footer = () => {
         <WrapperFooter className="pt-10">
             <InforContacts>
                 <RiLinkedinFill size={40} className="text-black dark:text-white"/>
-                <a href="www.linkedin.com/in/helioalves1" target="_blank">
+                <a href="https://linkedin.com/in/helioalves1" target="_blank">
                   <h6 className="font-bold text-black dark:text-white">Linkedin<br/>
                     Meu Perfil
                 </h6>

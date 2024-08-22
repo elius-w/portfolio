@@ -21,7 +21,7 @@ import lpsomar from '../../assets/lpsomar.png'
 import resortlatorre from '../../assets/resortlatorre.png'
 import minhacarteira from '../../assets/minhacarteira.png'
 import blog from '../../assets/blog.png'
-
+  
 
 export const Projects = () => {
 
@@ -124,7 +124,7 @@ export const Projects = () => {
 
             <div className="block-tabs flex">
               <button className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>
-                ReactJs
+                React
               </button>
               
               <button className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>

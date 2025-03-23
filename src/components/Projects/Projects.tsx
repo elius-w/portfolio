@@ -7,16 +7,17 @@ import logoDriver from '../../assets/google-drive-icon.svg';
 
 import villadosnativos from '../../assets/villadosnativos.png'
 import portobrasiltur from '../../assets/portobrasiltur.png'
-
 import terratrancoso from '../../assets/terratrancoso.png'
 import estudacom from '../../assets/estudacom.png'
-import lojacharme from '../../assets/lojacharme.png'
+import dramariana from '../../assets/dramariana.png'
+import latinaseeds from '../../assets/latinaseeds.png'
+import concrav from '../../assets/concrav.png'
+import aquaville from '../../assets/aquaville.png'
+import ravenala from '../../assets/ravenala.png'
+import simulaenem from '../../assets/simulaenem.png'
+import halloween from '../../assets/halloween.png'
+import embaixadores from '../../assets/embaixadores.png'
 
-import LP1simulaenem from '../../assets/LP1simulaenem.png'
-import LP2halloween from '../../assets/LP2halloween.png'
-import LP3embaixadores from '../../assets/LP3embaixadores.png'
-
-import lpsomar from '../../assets/lpsomar.png'
 
 import resortlatorre from '../../assets/resortlatorre.png'
 import minhacarteira from '../../assets/minhacarteira.png'
@@ -27,55 +28,73 @@ export const Projects = () => {
 
   const wordpress = [
     {
+      imgUrl: terratrancoso,
+      title: "Terra Trancoso",
+      description: "Imobiliária",
+      link:"https://terratrancoso.com.br/"
+    }, 
+    {
       imgUrl: estudacom,
       title: "Estuda.com",
       description: "Site da Plataforma",
       link:"https://estuda.com"
-    },  
+    },     
     {
-      imgUrl: terratrancoso,
-      title: "Terra Trancoso",
-      description: "Site de Imóveis",
-      link:"https://terratrancoso.com.br/"
+      imgUrl: dramariana,
+      title: "Dra. Mariana Batalha",
+      description: "Landing Page",
+      link:"https://marianabatalha.com.br"
+    },
+    {
+      imgUrl: aquaville,
+      title: "Hotel Aquaville",
+      description: "Site Institucional",
+      link:"https://aquaville.tur.br"
     },  
     {
       imgUrl: villadosnativos,
       title: "Villa dos Nativos",
       description: "Site Institucional",
       link:"https://villadosnativos.com.br"
-    },  
-    {
-      imgUrl: lpsomar,
-      title: "Somar Construtora",
-      description: "Landing Page",
-      link:"https://somarconstrutora.com/casabrisadavilla/"
     },
+    {
+      imgUrl: latinaseeds,
+      title: "Latina Seeds",
+      description: "Site Institucional",
+      link:"http://latinaseeds.com.br"
+    },
+    {
+      imgUrl: ravenala,
+      title: "Hotel Ravenala",
+      description: "Site Institucional",
+      link:"https://ravenalahotel.com.br"
+    }, 
+    {
+      imgUrl: concrav,
+      title: "Concrav",
+      description: "Landing Page",
+      link:"https://lp.concravartcon.com.br"
+    }, 
     {
       imgUrl: portobrasiltur,
       title: "Porto Brasil Turismo",
       description: "Loja Virtual",
       link:"https://portobrasiltur.com.br"
-    },
+    },    
     {
-      imgUrl: lojacharme,
-      title: "Loja Charme",
-      description: "Loja Virtual",
-      link:"https://lojacharme.com.br"
-    }, 
-    {
-      imgUrl: LP2halloween,
+      imgUrl: halloween,
       title: "Estuda.com",
       description: "Halloween LP",
       link:"https://lp.estuda.marketing/halloween"
     },   
     {
-      imgUrl: LP1simulaenem,
+      imgUrl: simulaenem,
       title: "Estuda.com",
       description: "Simula Enem LP",
       link:"https://lp.estuda.marketing/simula-enem-2023"
     },     
     {
-      imgUrl: LP3embaixadores,
+      imgUrl: embaixadores,
       title: "Estuda.com",
       description: "Embaixadores LP",
       link:"https://lp.estuda.marketing/embaixadores"
@@ -117,43 +136,27 @@ export const Projects = () => {
     <Container className="container" id="projects">
        <h2 className="text-black dark:text-white text-center text-3xl font-bold">Projects</h2>
         <p className="text-gray-black dark:text-white text-center text-xs">
-          Aqui está uma pequena seleção com algumas aplicações, sites e criativos que desenvolvi recentemente<br/> 
+          Aqui está uma pequena seleção com algumas aplicações, sites e landing pages que desenvolvi recentemente.<br/> 
         </p>
                 
         <WrapperTabs>
 
-            <div className="block-tabs flex">
-              <button className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>
-                React
-              </button>
+            <div className="block-tabs flex">              
               
-              <button className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>
+              <button className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>
                 Wordpress
-              </button>  
-              <button className={toggleState === 3 ? "active-tabs" : ""} onClick={() => toggleTab(3)}>
+              </button> 
+              <button className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>
+                React
+              </button> 
+              {/* <button className={toggleState === 3 ? "active-tabs" : ""} onClick={() => toggleTab(3)}>
                 Criativos
-              </button>    
+              </button>    */}
             </div>
 
             <div className="content-tabs">
-              <div className={toggleState === 1 ? "active-content" : "content"}>
-               
 
-                {
-                  projectsReact.map((project, index) =>{
-                    return(
-                      <ProjectCard
-                        key={index}
-                        {...project}
-                      />
-                    )
-                  })
-                }
-               
-              
-              </div>
-
-              <div className={toggleState === 2 ? "active-content" : "content"}>
+            <div className={toggleState === 1 ? "active-content" : "content"}>
                 
                 {
                   wordpress.map((project, index) =>{
@@ -168,7 +171,24 @@ export const Projects = () => {
                
               </div>
 
-              <div className={toggleState === 3 ? "active-content" : "content"}>
+              <div className={toggleState === 2 ? "active-content" : "content"}>
+               
+
+                {
+                  projectsReact.map((project, index) =>{
+                    return(
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                      />
+                    )
+                  })
+                }
+               
+              
+              </div>              
+
+              {/* <div className={toggleState === 3 ? "active-content" : "content"}>
                 
                <div className="flex flex-col">
                 <p className="text-black dark:text-white text-xs text-center mb-2 mt-5 ">Algumas artes criadas recentemente</p>
@@ -179,7 +199,7 @@ export const Projects = () => {
                </div>
 
                
-              </div>
+              </div> */}
 
             </div>
         </WrapperTabs>

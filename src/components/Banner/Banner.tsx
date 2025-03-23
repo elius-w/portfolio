@@ -36,7 +36,7 @@ export const Banner = () => {
 
         </h2>
         <p className="dark:text-white">
-          Desenvolvedor web, mais de 9 anos de experiência progredindo todos os dias, atuando em tecnologias web,  design e UI/UX.<br/><br/>
+          Desenvolvedor web, mais de 10 anos de experiência, progredindo todos os dias, atuando em tecnologias web, design e UI/UX.<br/><br/>
 
           Minha busca por desafios vai além do convencional; desejo me imergir em projetos que não apenas demandem habilidades técnicas, mas também ofereçam a oportunidade de criar soluções criativas e inovadoras.
         </p>

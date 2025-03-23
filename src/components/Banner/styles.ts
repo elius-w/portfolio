@@ -56,7 +56,7 @@ export const About = styled.div`
     }
     h2{
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: 600;
         line-height: 60px;
         background: #27015a;
         display: inline;

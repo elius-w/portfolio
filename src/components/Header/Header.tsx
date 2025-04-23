@@ -3,8 +3,8 @@ import {Link} from'react-scroll'
 import { useTheme } from '../Hooks/useTheme';
 import {clsx} from 'clsx';
 
-import logoImg from '../../assets/logo-helioalves.svg';
-import logoImgBlack from '../../assets/logo-helioalves-black.svg';
+import logoImg from '../../assets/logo-helioalves-w.svg';
+import logoImgBlack from '../../assets/logo-helioalves-b.svg';
 import {MdClose, MdMenu} from 'react-icons/md'
 // import iconLinkedin  from '../../assets/icon-linkedin.svg' ;   
 import {FaLinkedinIn}  from 'react-icons/fa' ;   

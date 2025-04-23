@@ -11,13 +11,12 @@ import terratrancoso from '../../assets/terratrancoso.png'
 import estudacom from '../../assets/estudacom.png'
 import dramariana from '../../assets/dramariana.png'
 import latinaseeds from '../../assets/latinaseeds.png'
-import concrav from '../../assets/concrav.png'
 import aquaville from '../../assets/aquaville.png'
 import ravenala from '../../assets/ravenala.png'
 import simulaenem from '../../assets/simulaenem.png'
 import halloween from '../../assets/halloween.png'
 import embaixadores from '../../assets/embaixadores.png'
-
+import evandrolemos from '../../assets/evandrolemos.png'
 
 import resortlatorre from '../../assets/resortlatorre.png'
 import minhacarteira from '../../assets/minhacarteira.png'
@@ -62,43 +61,43 @@ export const Projects = () => {
       title: "Latina Seeds",
       description: "Site Institucional",
       link:"http://latinaseeds.com.br"
-    },
-    {
-      imgUrl: ravenala,
-      title: "Hotel Ravenala",
-      description: "Site Institucional",
-      link:"https://ravenalahotel.com.br"
-    }, 
-    {
-      imgUrl: concrav,
-      title: "Concrav",
-      description: "Landing Page",
-      link:"https://lp.concravartcon.com.br"
-    }, 
-    {
-      imgUrl: portobrasiltur,
-      title: "Porto Brasil Turismo",
-      description: "Loja Virtual",
-      link:"https://portobrasiltur.com.br"
-    },    
-    {
-      imgUrl: halloween,
-      title: "Estuda.com",
-      description: "Halloween LP",
-      link:"https://lp.estuda.marketing/halloween"
-    },   
-    {
-      imgUrl: simulaenem,
-      title: "Estuda.com",
-      description: "Simula Enem LP",
-      link:"https://lp.estuda.marketing/simula-enem-2023"
-    },     
-    {
-      imgUrl: embaixadores,
-      title: "Estuda.com",
-      description: "Embaixadores LP",
-      link:"https://lp.estuda.marketing/embaixadores"
     }
+    // {
+    //   imgUrl: ravenala,
+    //   title: "Hotel Ravenala",
+    //   description: "Site Institucional",
+    //   link:"https://ravenalahotel.com.br"
+    // }, 
+    // {
+    //   imgUrl: evandrolemos,
+    //   title: "Evandro Lemos",
+    //   description: "Landing Page",
+    //   link:"https://evandrolemos.com"
+    // },   
+    // {
+    //   imgUrl: portobrasiltur,
+    //   title: "Porto Brasil Turismo",
+    //   description: "Loja Virtual",
+    //   link:"https://portobrasiltur.com.br"
+    // },    
+    // {
+    //   imgUrl: halloween,
+    //   title: "Estuda.com",
+    //   description: "Halloween LP",
+    //   link:"https://lp.estuda.marketing/halloween"
+    // } 
+    // {
+    //   imgUrl: simulaenem,
+    //   title: "Estuda.com",
+    //   description: "Simula Enem LP",
+    //   link:"https://lp.estuda.marketing/simula-enem-2023"
+    // },     
+    // {
+    //   imgUrl: embaixadores,
+    //   title: "Estuda.com",
+    //   description: "Embaixadores LP",
+    //   link:"https://lp.estuda.marketing/embaixadores"
+    // }
     
   ]
 

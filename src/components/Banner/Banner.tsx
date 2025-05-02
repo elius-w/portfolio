@@ -36,9 +36,10 @@ export const Banner = () => {
 
         </h2>
         <p className="dark:text-white">
-          Desenvolvedor web, mais de 10 anos de experiência, progredindo todos os dias, atuando em tecnologias web, design e UI/UX.<br/><br/>
+          Desenvolvedor web com mais de 10 anos de experiência.<br/> Atuo nas áreas de tecnologias web, design e UX/UI.<br/><br/>
 
-          Minha busca por desafios vai além do convencional; desejo me imergir em projetos que não apenas demandem habilidades técnicas, mas também ofereçam a oportunidade de criar soluções criativas e inovadoras.
+          Gosto de me envolver em projetos que vão além da parte técnica. Busco oportunidades onde eu possa usar também o lado criativo, propondo soluções que sejam úteis, diferentes e que realmente façam a diferença.
+          Acredito que quando tecnologia e design caminham juntos, o resultado é sempre mais relevante.
         </p>
         <button className='rounded-full'><a href={curriculo} target="_blank" className="px-8 py-3 rounded-full flex items-center  dark:bg-white dark:text-black font-bold">Baixar CV <BiCloudDownload size={23}/></a></button>
       </About>
